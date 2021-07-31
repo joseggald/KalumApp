@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.HorarioController">
+   <children>
+      <TableView fx:id="tblHorarios" layoutX="61.0" layoutY="85.0" prefHeight="200.0" prefWidth="457.0">
+        <columns>
+          <TableColumn fx:id="colHorario_Id" prefWidth="75.0" text="Horario_id" />
+          <TableColumn fx:id="colHorario_inicio" prefWidth="187.00003051757812" text="Horario Inicio" />
+            <TableColumn fx:id="colHorario_final" minWidth="0.0" prefWidth="194.59994506835938" text="Horario Final" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="119.0" fitWidth="397.0" layoutX="91.0" layoutY="297.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../resource/images/2.png" />
+         </image>
+      </ImageView>
+      <Label id="titulo-text" layoutX="155.0" layoutY="14.0" prefHeight="46.0" prefWidth="290.0" text="Registro de Horarios">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="110.0" layoutY="313.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="26.0" prefWidth="68.0" text="Nuevo" />
+      <Button layoutX="231.0" layoutY="313.0" mnemonicParsing="false" onAction="#modificar" prefHeight="26.0" prefWidth="97.0" text="Modificar" />
+      <Button layoutX="374.0" layoutY="313.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="26.0" prefWidth="98.0" text="Actualizar" />
+      <Button layoutX="166.0" layoutY="368.0" mnemonicParsing="false" onAction="#mostrarReporte" prefHeight="26.0" prefWidth="79.0" text="Reporte" />
+      <Button layoutX="315.0" layoutY="368.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="79.0" text="Eliminar" />
+      <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="502.0" layoutY="382.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/images/kisspng-indian-arrow-black-clip-art-white-arrow-cliparts-5ab4ba13468a21.0559890015217935552889.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

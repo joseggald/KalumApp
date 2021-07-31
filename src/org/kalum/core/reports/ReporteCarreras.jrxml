@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteALumnos" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="677ffe83-1a91-4b7d-8ad9-a0607a099296">
+	<property name="ireport.zoom" value="1.771561000000011"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="37"/>
+	<parameter name="LOGO_KALUM" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[SELECT
+     carrera_tecnica.`codigo_carrera` AS 'CODIGO CARRERA',
+     carrera_tecnica.`nombre` AS 'NOMBRE DE CARRERA'
+FROM
+     `carrera_tecnica` carrera_tecnica]]>
+	</queryString>
+	<field name="CODIGO CARRERA" class="java.lang.String"/>
+	<field name="NOMBRE DE CARRERA" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<textField>
+				<reportElement x="437" y="56" width="135" height="20" uuid="f4a04ff0-a2a3-46f0-9065-792ae29c1a34"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="0" width="354" height="56" uuid="877996fb-9934-423d-b7b9-6ed76b0a6f1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="20"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE CONTROL ACADEMICO KALUM V.1.0]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="116" height="46" uuid="700f6518-ffcd-4171-8801-7d5cc41fee4e"/>
+				<imageExpression><![CDATA["D:\\Jose\\CURSO\\BACKEND\\JavaApp1\\src\\org\\kalum\\resource\\images\\4.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="223" y="56" width="170" height="20" uuid="211896d1-7634-42b6-957b-75d1227f0fc7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<text><![CDATA[GUATEMALA, GUATEMALA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="65" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="41" width="572" height="1" uuid="8373512c-b327-4614-961a-e31511407d26"/>
+			</line>
+			<line>
+				<reportElement x="0" y="60" width="572" height="1" uuid="319efff9-559c-4b06-81a4-d4b4354e05bc"/>
+			</line>
+			<staticText>
+				<reportElement x="180" y="0" width="213" height="26" uuid="69c7163e-2eeb-449b-b1dd-3484a4abc0db"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="18" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE CARRERAS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="41" width="1" height="19" uuid="55e2285f-e28e-4d66-8e1a-d8126f27c0eb"/>
+			</line>
+			<line>
+				<reportElement x="164" y="42" width="1" height="19" uuid="e3d86a6c-3b59-4325-a266-3b55c3e524a1"/>
+			</line>
+			<line>
+				<reportElement x="571" y="41" width="1" height="19" uuid="f558da26-d089-4b7b-bc0c-5d43e5e2832e"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="42" width="163" height="18" uuid="bda0a665-ea65-47c9-839b-1abefbcab835"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[CODIGO CARRERA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="43" width="311" height="18" uuid="37801b0d-7023-47a5-b006-f2c87029023c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[NOMBRE DE CARRERA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="0" width="572" height="20" uuid="1ea860a3-a3c4-4f27-a5a1-1d3b996f5da2"/>
+			</rectangle>
+			<line>
+				<reportElement x="164" y="0" width="1" height="20" uuid="26381d00-e685-4bbb-8d08-6346ef06d10a"/>
+			</line>
+			<textField>
+				<reportElement x="1" y="0" width="163" height="20" uuid="62fc6e5b-7db9-46e6-b37a-384d88a803b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CODIGO CARRERA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="310" height="20" uuid="376e246a-5403-4061-923d-2fc9def3df85"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMBRE DE CARRERA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="227" y="1" width="100" height="20" uuid="cc9f3d9a-254e-4992-9d4d-91de59b887d2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="492" y="0" width="98" height="58" uuid="3df941f7-693f-4435-87dd-2afe74cd9759"/>
+				<imageExpression><![CDATA["D:\\Jose\\CURSO\\BACKEND\\JavaApp1\\src\\org\\kalum\\resource\\images\\5.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="29" splitType="Stretch"/>
+	</summary>
+</jasperReport>

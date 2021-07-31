@@ -1,0 +1,37 @@
+.root {
+    -fx-background-image: url("/org/kalum/resource/images/1.png");
+
+}
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Lucida Sans Unicode";
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.menu-bar{
+    -fx-font-size: 14px;
+    -fx-font-family: "Bahnschrift";
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-family: "Bahnschrift";
+    -fx-font-weight: bold;
+    -fx-background-color: #fe8b70;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#titulo-text {
+    -fx-font-size: 29px;
+    -fx-font-family: "Bahnschrift";
+    -fx-text-fill: white;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#actiontarget {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

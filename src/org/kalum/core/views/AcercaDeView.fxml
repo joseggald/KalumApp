@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.AcercaDeController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="417.0" layoutX="87.0" layoutY="107.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../resource/images/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="125.0" layoutX="242.0" layoutY="435.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#cambiarMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/images/kisspng-indian-arrow-black-clip-art-white-arrow-cliparts-5ab4ba13468a21.0559890015217935552889.png" />
+         </image>
+      </ImageView>
+      <Label id="titulo-text" layoutX="216.0" layoutY="52.0" text="ACERCA DE...">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="114.0" layoutY="124.0" prefHeight="25.0" prefWidth="364.0" text="Proyecto desarollado por José Galdamez. (2021)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="114.0" layoutY="188.0" prefHeight="25.0" prefWidth="364.0" text="La aplicación Kalum V1.0.0 tiene como objetivo el" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="123.0" layoutY="213.0" prefHeight="25.0" prefWidth="345.0" text=" orden y registro a nivel educativo." textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="128.0" layoutY="263.0" prefHeight="25.0" prefWidth="345.0" text="Cuenta con registros en base de datos y" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="109.0" layoutY="288.0" prefHeight="25.0" prefWidth="378.0" text=" funciones completas para el control academico." textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="211.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.CarreraTecnicaCUController">
+   <children>
+      <ImageView fitHeight="62.0" fitWidth="523.0" layoutX="39.0" layoutY="49.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../resource/images/2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="67.0" prefHeight="21.0" prefWidth="170.0" text="Nombre de la carrera:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="139.0" layoutY="145.0" mnemonicParsing="false" onAction="#guardar" prefHeight="31.0" prefWidth="120.0" text="GUARDAR" />
+      <Button layoutX="322.0" layoutY="145.0" mnemonicParsing="false" onAction="#salir" prefHeight="31.0" prefWidth="140.0" text="CANCELAR" />
+      <TextField fx:id="txtNombre" layoutX="245.0" layoutY="64.0" prefHeight="31.0" prefWidth="281.0" />
+   </children>
+</AnchorPane>

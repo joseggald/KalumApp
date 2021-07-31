@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteALumnos" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="677ffe83-1a91-4b7d-8ad9-a0607a099296">
+	<property name="ireport.zoom" value="1.610510000000021"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="LOGO_KALUM" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[SELECT
+     instructor.`apellidos` AS APELLIDOS,
+instructor.`nombres` AS NOMBRES,
+     instructor.`cometario` AS COMENTARIO,
+     instructor.`direccion` AS DIRECCIÓN,
+     instructor.`estatus` AS ESTATUS,
+     instructor.`foto` AS FOTO,
+     instructor.`telefono` AS TELEFONO
+FROM
+     `instructor` instructor]]>
+	</queryString>
+	<field name="APELLIDOS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOMBRES" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMENTARIO" class="java.lang.String"/>
+	<field name="DIRECCIÓN" class="java.lang.String"/>
+	<field name="ESTATUS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FOTO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TELEFONO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="131" y="0" width="537" height="35" uuid="bbe49b15-e167-4a51-bfeb-631a12f7950a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="20"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE CONTROL ACADEMICO KALUM V.1.0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="36" width="170" height="20" uuid="3b561dcc-f4e3-4482-b327-d6f432b9cf9a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<text><![CDATA[GUATEMALA, GUATEMALA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="607" y="41" width="145" height="20" uuid="33a6c5a3-d6b7-48d1-8812-8c7fd8ef9fed"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Bahnschrift" size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1" y="0" width="134" height="56" uuid="1aa34a2a-97b1-4316-bc0f-94b74ba04bb7"/>
+				<imageExpression><![CDATA["D:\\Jose\\CURSO\\BACKEND\\JavaApp1\\src\\org\\kalum\\resource\\images\\4.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="24" splitType="Stretch">
+			<elementGroup/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="41" width="752" height="1" uuid="8373512c-b327-4614-961a-e31511407d26"/>
+			</line>
+			<line>
+				<reportElement x="0" y="60" width="752" height="1" uuid="319efff9-559c-4b06-81a4-d4b4354e05bc"/>
+			</line>
+			<line>
+				<reportElement x="0" y="41" width="1" height="19" uuid="917c5fad-a333-43fe-aa1d-fe597c6dd920"/>
+			</line>
+			<line>
+				<reportElement x="752" y="42" width="1" height="19" uuid="7b23445a-5d03-46b2-b194-9c13c7b3ff37"/>
+			</line>
+			<staticText>
+				<reportElement x="219" y="0" width="288" height="26" uuid="ebd9f2e9-80fa-4814-9eff-dbd5118512d3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="18" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE INSTRUCTORES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="42" width="120" height="18" uuid="3e4e08bf-d0f9-4dbf-8ce7-87110ad8a6f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[APELLIDOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="42" width="122" height="18" uuid="9e97d427-e45e-4821-a274-ad3bf6ef203e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[NOMBRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="42" width="116" height="18" uuid="a0df5e94-1289-4050-b38a-e10a1dac83b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[COMENTARIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="42" width="127" height="18" uuid="8f832223-0f8b-455d-bcde-fa583ed0928a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="42" width="81" height="18" uuid="e52cd263-81e1-44b2-bc86-cc4dd5aa43dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[ESTATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="567" y="42" width="101" height="18" uuid="ad0bf6d7-5a22-49d8-8a93-ccac9881cfd9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[FOTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="668" y="42" width="84" height="18" uuid="23a1c6fe-e416-451d-a045-18651d3ec753"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="14"/>
+				</textElement>
+				<text><![CDATA[TELEFONO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="121" y="41" width="1" height="19" uuid="1059a7c3-e514-469f-aa92-b7d04f6c7597"/>
+			</line>
+			<line>
+				<reportElement x="242" y="42" width="1" height="19" uuid="66555e0f-0933-4761-a320-0390d6876727"/>
+			</line>
+			<line>
+				<reportElement x="359" y="42" width="1" height="18" uuid="ec385c62-44b5-4285-8dbe-04708bb39147"/>
+			</line>
+			<line>
+				<reportElement x="485" y="42" width="1" height="19" uuid="5b417ffe-441d-42a5-b8c1-0471c716a720"/>
+			</line>
+			<line>
+				<reportElement x="567" y="42" width="1" height="18" uuid="69980fe6-818a-4833-84e3-4b83fa84a85d"/>
+			</line>
+			<line>
+				<reportElement x="668" y="41" width="1" height="19" uuid="bc834f2d-05f2-4f44-9938-1e2c66c38da9"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="0" width="752" height="20" uuid="1ea860a3-a3c4-4f27-a5a1-1d3b996f5da2"/>
+			</rectangle>
+			<textField>
+				<reportElement x="1" y="0" width="120" height="20" uuid="e62ecf6b-0386-4bdc-945f-38723cc3ed6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{APELLIDOS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="0" width="122" height="20" uuid="aecc3558-4f67-474d-935d-ea06bf29398e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMBRES}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="0" width="116" height="20" uuid="8ec0268d-78c9-45db-9dcb-69842c95d751"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COMENTARIO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="0" width="127" height="20" uuid="6410a90c-86d3-4283-a519-52afaee301f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DIRECCIÓN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="81" height="20" uuid="59505897-23e3-4bb0-a2df-8c8cf2845d36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ESTATUS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="567" y="0" width="101" height="20" uuid="21e9b7e2-219d-4dc1-918d-2f7685c71aec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FOTO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="668" y="0" width="84" height="20" uuid="44727686-fac1-48f3-a660-7e1d25b7ad19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bahnschrift" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TELEFONO}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="121" y="0" width="1" height="19" uuid="a0b2bf67-3b08-4f21-a22f-9d69f5558c04"/>
+			</line>
+			<line>
+				<reportElement x="242" y="0" width="1" height="19" uuid="b5393f76-8039-4bcb-a688-61ac60e0e363"/>
+			</line>
+			<line>
+				<reportElement x="359" y="0" width="1" height="20" uuid="b8e8450a-694f-424c-8641-d30724f6b2e2"/>
+			</line>
+			<line>
+				<reportElement x="485" y="0" width="1" height="20" uuid="d1e3eb83-0369-44c0-bc53-06a820c66687"/>
+			</line>
+			<line>
+				<reportElement x="567" y="0" width="1" height="20" uuid="26f065fe-fcbb-4202-9721-702168d9f3fe"/>
+			</line>
+			<line>
+				<reportElement x="668" y="0" width="1" height="20" uuid="3ff91401-3eff-44e8-8dac-293ef64626ad"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="58" splitType="Stretch">
+			<textField>
+				<reportElement x="320" y="10" width="100" height="20" uuid="cc9f3d9a-254e-4992-9d4d-91de59b887d2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="14" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="655" y="0" width="98" height="58" uuid="20631169-9b5b-49c6-b774-a94319a9ae4e"/>
+				<imageExpression><![CDATA["D:\\Jose\\CURSO\\BACKEND\\JavaApp1\\src\\org\\kalum\\resource\\images\\5.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch"/>
+	</summary>
+</jasperReport>

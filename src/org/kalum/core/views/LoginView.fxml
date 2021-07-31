@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="titulo-text" prefHeight="196.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="323.0" layoutX="128.0" layoutY="56.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../resource/images/2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="146.0" layoutY="72.0" prefHeight="18.0" prefWidth="76.0" text="Usuario:">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="105.0" prefHeight="18.0" prefWidth="86.0" text="Password:">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="243.0" layoutY="147.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="34.0" prefWidth="114.0" text="Login" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Agency FB" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUsuario" layoutX="231.0" layoutY="68.0" prefHeight="26.0" prefWidth="191.0">
+         <font>
+            <Font name="Arial Narrow Bold" size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="231.0" layoutY="101.0" prefHeight="26.0" prefWidth="191.0">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </PasswordField>
+      <Label id="titulo-text" layoutX="205.0" layoutY="14.0" text="Inicio de sesion">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
